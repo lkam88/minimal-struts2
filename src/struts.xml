@@ -5,7 +5,9 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    <package name="hello" extends="struts-default">
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="minimal" extends="struts-default">
         <action name="Hello" class="net.feminaexlux.struts2.minimal.Hello">
             <result>hello.jsp</result>
         </action>
